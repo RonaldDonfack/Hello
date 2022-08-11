@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Module 4 Graded Assignment</title>
+        <script>
+              
+                var helloSpeaker = {}
+
+                var speakWord = "Hello";
+
+
+                helloSpeaker.speak = (names) => {
+                console.log(speakWord + " " + names);
+             }
+           
+            
+                var byeSpeaker = {}
+
+                var speakWord = "Good Bye";
+
+                byeSpeaker.speak = (names) => {
+                console.log(speakWord + " " + names);
+               
+             }
+            
+      var product = () => {
+
+        var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+
+            for (var i = 0; i < names.length; i++) {
+
+                  var firstLetter = names[i].charAt(0).toLowerCase();
+                    // console.log(firstLetter)
+                      if (firstLetter === 'j') {
+                       
+                        byeSpeaker.speak(names[i]);
+                    }
+                     else {
+                        helloSpeaker.speak(names[i]);
+                    }
+                    }
+
+                    }
+            product()
+
+        </script>
+    </head>
+    <body>
+        <h1>Module 4 Solution Starter </h1>
+    </body>
+</html>
